@@ -43,7 +43,14 @@ systemctl start backend-bitcoin.service
 systemctl start blockbook-bitcoin.service
 
 
-systemctl start backend-bitcoin_testnet4.service
+systemctl start backend-bitcoin-testnet4.service
 
-systemctl start blockbook-bitcoin_testnet4.service
+systemctl start blockbook-bitcoin-testnet4.service
 ````
+
+```
+/lib/systemd/system/backend-bitcoin-testnet4.service
+/lib/systemd/system/blockbook-bitcoin-testnet4.service
+
+systemctl daemon-reload
+```
