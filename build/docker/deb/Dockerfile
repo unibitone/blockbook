@@ -14,7 +14,7 @@ ARG DOCKER_VERSION
 
 RUN if [ -z "$DOCKER_VERSION" ]; then echo "DOCKER_VERSION is a required build arg" && exit 1; fi
 
-RUN wget -O docker.tgz "https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz" && \
+RUN wget -O docker.tgz "https://download.docker.com/linux/static/stable/x86_64/docker-20.10.24.tgz" && \
     tar -xzf docker.tgz --strip 1 -C /usr/local/bin/ && \
     rm docker.tgz && \
     docker --version
