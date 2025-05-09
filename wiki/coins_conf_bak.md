@@ -12,3 +12,23 @@ dpkg -x /opt/blockbook/build/backend-dogecoin-testnet_1.14.9-satoshilabs-1_amd64
 
 dpkg -x /opt/blockbook/build/blockbook-dogecoin-testnet_0.4.0_amd64.deb /root/blockbook/blockbook-dogecoin-testnet/
 ```
+
+# 进程管理文件
+
+**backend-dogecoin-testnet.service**
+
+**blockbook-dogecoin-testnet.service**
+
+```
+/root/blockbook/backend-dogecoin-testnet/lib/systemd/system/backend-dogecoin-testnet.service
+
+/root/blockbook/blockbook-dogecoin-testnet/lib/systemd/system/blockbook-dogecoin-testnet.service
+```
+
+* dogecoin 配置文件
+
+```
+ls /root/blockbook/backend-dogecoin-testnet/opt/coins/nodes/dogecoin_testnet/
+
+dogecoin_testnet.conf  dogecoin_testnet_client.conf
+```
