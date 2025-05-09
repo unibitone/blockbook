@@ -20,9 +20,13 @@ https://hub.docker.com/r/gostartups/blockbook-build
 ```
 1）修改镜像
 
+./Makefile
+
 BASE_IMAGE = gostartups/blockbook-build
 
 2）注释
+
+./build/docker/bin/Dockerfile
 
 安装golang & rocksdb
 ```
