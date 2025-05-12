@@ -41,6 +41,10 @@ make all-bitcoin_testnet4
 
 ## 服务管理
 
+推荐 blockbook-xxx.service -workers=1 添加命令行选项，防止同步出错
+
+run blockbook with parameter -workers=1. This disables bulk import mode, which caches a lot of data in memory (not in rocksdb cache). It will run about twice as slowly but especially for smaller blockchains it is no problem at all.
+
 ```
 systemctl start backend-bitcoin.service
 
